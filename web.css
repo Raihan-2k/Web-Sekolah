@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;/*Lebar dan tinggi (width dan height) berdasarkan padding dan border*/
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Arvo', serif;
+    margin: 0;
+}
+
+.container {
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 100%;/*Properti max-width digunakan untuk mengatur lebar maksimum elemen*/
+    width: 1000px;
+}
+
+header {
+    background-image: url("1.jpg");
+    background-size: cover;
+    color: white;
+    display: flex; /*sama seperti block*/
+    flex-direction: column;/*untuk mengarahkan sesuai yg kita inginkan*/
+    align-items: flex-start;
+    min-height: calc(100vh - 0px);/*mengatur lebar minimum elemen*/
+}
+
+.content {
+    font-size: 30px;
+    margin: 300px  auto;
+    max-width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;/* mensejajarkan item-item diantara flexbox*/
+}
+
+nav .logo {
+    font-size: 20px;
+}
+
+
+
+.highlight {
+    background-color: red;
+    color: whitesmoke;
+    padding: 15px;
+    text-decoration: none;
+    
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 16px;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer strong {
+    color: #00c2ff;
+}
+
+footer p {
+    margin: 0;
+}
+
